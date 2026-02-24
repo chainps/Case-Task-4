@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="calc-card">
+        <h2 class="calc-title">Калькулятор</h2>
+
+        <div class="input-group">
+            <input type="text" id="input1" required>
+            <label for="input1">Первое число</label>
+            <div class="underline"></div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="input2" required>
+            <label for="input2">Второе число</label>
+            <div class="underline"></div>
+        </div>
+
+        <div class="actions-grid">
+            <button class="btn btn-op" id="btn-sum">Сумма <span class="icon">+</span></button>
+            <button class="btn btn-op" id="btn-diff">Разность <span class="icon">−</span></button>
+            <button class="btn btn-op" id="btn-prod">Произведение <span class="icon">×</span></button>
+            <button class="btn btn-op" id="btn-div">Деление <span class="icon">÷</span></button>
+        </div>
+
+        <div class="result-box" id="result-output">
+            <span class="placeholder-text">Результат</span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
